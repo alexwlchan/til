@@ -67,4 +67,8 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Getting a tally of SQLite values as a CSV.md">Getting a tally of SQLite values as a CSV</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Using sqlite-utils to convert a CSV into a SQLite database.md">Using sqlite-utils to convert a CSV into a SQLite database</a> – 2 January 2024
-<!-- [[[end]]] (checksum: c704aafaec27f21e7f97a64ec59a4b71) -->
+
+## youtube
+
+- <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get a list of Liked videos.md">Get a list of Liked videos</a> – 3 January 2024
+<!-- [[[end]]] (checksum: 0c7c1fe339dbf75b8bbfa6d438a6b7c4) -->
