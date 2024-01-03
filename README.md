@@ -6,6 +6,7 @@ Search these TILs at https://til.alexwlchan.net/
 
 <!-- [[[cog
 import frontmatter
+import datetime
 import os
 import re
 
@@ -28,14 +29,13 @@ for d in sorted(os.listdir(".")):
         entries.append((f, fm))
 
     for f, fm in sorted(entries, key=lambda e: e[1]['date'], reverse=True):
-        date = fm['date'].split()[0]
-        assert re.match(r'^[0-9]{4}-[0-9]{2}-[0-9]{2}$', date), f
+        date = datetime.datetime.fromisoformat(fm['date'].split()[0]).strftime('%-d %B %Y')
 
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{f}">{f}</a> - {date}')
 ]]]-->
 
 ## sqlite
 
-- <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Getting a tally of SQLite values as a CSV.md">Getting a tally of SQLite values as a CSV.md</a> - 2024-01-03
-- <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Using sqlite-utils to convert a CSV into a SQLite database.md">Using sqlite-utils to convert a CSV into a SQLite database.md</a> - 2024-01-02
-<!-- [[[end]]] (checksum: 0740242c3e1ce97be6169e042ed746af) -->
+- <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Getting a tally of SQLite values as a CSV.md">Getting a tally of SQLite values as a CSV.md</a> - 3 January 2024
+- <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Using sqlite-utils to convert a CSV into a SQLite database.md">Using sqlite-utils to convert a CSV into a SQLite database.md</a> - 2 January 2024
+<!-- [[[end]]] (checksum: 9b56f04fbd0ecbdc0610ecf6ddc38312) -->
