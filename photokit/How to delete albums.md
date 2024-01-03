@@ -1,5 +1,5 @@
 ---
-date: 2024-01-03 23:15:50 +0000
+date: 2023-12-27 23:15:50 +0000
 ---
 You can delete albums with the [deleteAssetCollections] API, for example:
 
