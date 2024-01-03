@@ -12,10 +12,25 @@ import re
 
 import cog
 
-for d in sorted(os.listdir(".")):
-    if not os.path.isdir(d) or d.startswith("."):
-        continue
+subdir_names = [
+    d
+    for d in sorted(os.listdir("."))
+    if os.path.isdir(d) and not d.startswith(".")
+]
 
+# When this list gets long enough, this will enable me to create
+# an index of topic names.
+#
+# for i, dirname in enumerate(subdir_names, start=1):
+#     entries = len([f for f in os.listdir(dirname) if f.endswith(".md")])
+#     cog.out(f'<a href="#{dirname}">{dirname}</a> ({entries})')
+#   
+#     if i != len(subdir_names):
+#         cog.out(" / ")
+#     else:
+#         cog.outl("")
+
+for d in subdir_names:
     cog.outl(f"\n## {d}\n")
 
     entries = []
