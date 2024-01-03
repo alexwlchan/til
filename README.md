@@ -44,8 +44,12 @@ for d in sorted(os.listdir(".")):
 
 - <a href="https://github.com/alexwlchan/til/blob/main/photokit/How to delete albums.md">How to delete albums</a> – 27 December 2023
 
+## python
+
+- <a href="https://github.com/alexwlchan/til/blob/main/python/Run a randomly selected subset of tests with pytest.md">Run a randomly selected subset of tests with pytest</a> – 3 January 2024
+
 ## sqlite
 
 - <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Getting a tally of SQLite values as a CSV.md">Getting a tally of SQLite values as a CSV</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Using sqlite-utils to convert a CSV into a SQLite database.md">Using sqlite-utils to convert a CSV into a SQLite database</a> – 2 January 2024
-<!-- [[[end]]] (checksum: 5671c12ea4ff701d848234a858323e27) -->
+<!-- [[[end]]] (checksum: c704aafaec27f21e7f97a64ec59a4b71) -->
