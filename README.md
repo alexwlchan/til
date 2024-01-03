@@ -31,15 +31,21 @@ for d in sorted(os.listdir(".")):
     for f, fm in sorted(entries, key=lambda e: e[1]['date'], reverse=True):
         date = datetime.datetime.fromisoformat(fm['date'].split()[0]).strftime('%-d %B %Y')
 
-        cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{f}">{f}</a> - {date}')
+        title = f.replace(".md", "")
+
+        cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{f}">{title}</a> – {date}')
 ]]]-->
+
+## live-text
+
+- <a href="https://github.com/alexwlchan/til/blob/main/live-text/Live Text is aware of how hyphenation works.md">Live Text is aware of how hyphenation works</a> – 26 December 2023
 
 ## photokit
 
-- <a href="https://github.com/alexwlchan/til/blob/main/photokit/How to delete albums.md">How to delete albums.md</a> - 27 December 2023
+- <a href="https://github.com/alexwlchan/til/blob/main/photokit/How to delete albums.md">How to delete albums</a> – 27 December 2023
 
 ## sqlite
 
-- <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Getting a tally of SQLite values as a CSV.md">Getting a tally of SQLite values as a CSV.md</a> - 3 January 2024
-- <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Using sqlite-utils to convert a CSV into a SQLite database.md">Using sqlite-utils to convert a CSV into a SQLite database.md</a> - 2 January 2024
-<!-- [[[end]]] (checksum: f8f1a255b16e22b1b862dd577bc981c4) -->
+- <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Getting a tally of SQLite values as a CSV.md">Getting a tally of SQLite values as a CSV</a> – 3 January 2024
+- <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Using sqlite-utils to convert a CSV into a SQLite database.md">Using sqlite-utils to convert a CSV into a SQLite database</a> – 2 January 2024
+<!-- [[[end]]] (checksum: 5671c12ea4ff701d848234a858323e27) -->

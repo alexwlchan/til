@@ -1,0 +1,19 @@
+---
+date: 2023-12-26 12:26:12 +0000
+---
+
+Here’s a screenshot from a Kindle book (from *Silo Submerged*, by WJ Davies):
+
+![](the-runner-text-screenshot.png)
+
+If I run that through Live Text in Preview or Photos on Ventura, notice how it's smart enough to compress the hyphenated "al-ways" into a single line:
+
+> It suddenly struck him the why of cleaners past. Although most were prone to telling their casters they wouldn't clean, they **always** did. Upon seeing the perfect world that had been shielded from them their entire
+
+But it doesn’t always work – here’s another except from the same trilogy:
+
+![](the-watcher-text-screenshot.png)
+
+which is transcribed as:
+
+> He understood the need for male and female relationships. After all, how else would children be born to continue humanity's **leg-acy**? But he always thought that convention
