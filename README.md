@@ -70,5 +70,6 @@ for d in subdir_names:
 
 ## youtube
 
+- <a href="https://github.com/alexwlchan/til/blob/main/youtube/Change whether you've Liked a video with the Python API.md">Change whether you've Liked a video with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get a list of Liked videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 0c7c1fe339dbf75b8bbfa6d438a6b7c4) -->
+<!-- [[[end]]] (checksum: f6ad1c577fd68d3107bef441136c2ab8) -->
