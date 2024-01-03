@@ -62,3 +62,11 @@ for video in reversed(list(get_liked_videos(old_youtube)):
 ```
 
 Note that I reversed the list because I wanted to preserve the rough order, and `get_liked_videos()` returns the most recently liked video first.
+
+I got a couple of HTTP 403 errors:
+
+*   "The owner of the video that you are trying to rate has disabled ratings for that video." – but I was able to like/unlike the video in my web browser, so I'm not sure what was happening here.
+
+*   "The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>." – this was a rate limit on the "getting the list of likes", and I'd used a bunch of my quota while testing.
+    
+    I found the quotas under the "IAM and admin" panel of the Google Cloud console (after following a link from [Quota and Compliance Audits](https://developers.google.com/youtube/v3/guides/quota_and_compliance_audits)), where I could see that I'd used up my daily quota – I'll just continue the script tomorrow.
