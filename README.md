@@ -18,17 +18,22 @@ subdir_names = [
     if os.path.isdir(d) and not d.startswith(".")
 ]
 
+total_entries = 0
+
+for i, dirname in enumerate(subdir_names, start=1):
+    entries = len([f for f in os.listdir(dirname) if f.endswith(".md")])
+    total_entries += entries
+
 # When this list gets long enough, this will enable me to create
 # an index of topic names.
-#
-# for i, dirname in enumerate(subdir_names, start=1):
-#     entries = len([f for f in os.listdir(dirname) if f.endswith(".md")])
 #     cog.out(f'<a href="#{dirname}">{dirname}</a> ({entries})')
 #   
 #     if i != len(subdir_names):
 #         cog.out(" / ")
 #     else:
 #         cog.outl("")
+
+cog.outl(f"{total_entries} TILs so far.")
 
 for d in subdir_names:
     cog.outl(f"\n## {d}\n")
@@ -50,6 +55,7 @@ for d in subdir_names:
 
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{f}">{title}</a> – {date}')
 ]]]-->
+7 TILs so far.
 
 ## live-text
 
@@ -70,6 +76,6 @@ for d in subdir_names:
 
 ## youtube
 
-- <a href="https://github.com/alexwlchan/til/blob/main/youtube/Change whether you've Liked a video with the Python API.md">Change whether you've Liked a video with the Python API</a> – 3 January 2024
+- <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying Liked videos with the Python API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get a list of Liked videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: f6ad1c577fd68d3107bef441136c2ab8) -->
+<!-- [[[end]]] (checksum: 58516f0c1f46dde5d49060bd5acebdd4) -->
