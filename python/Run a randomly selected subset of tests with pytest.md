@@ -5,7 +5,7 @@ This is a question asked [by Ned Batchelder][nedbat] on Mastodon.
 
 There's a plugin [pytest-random-order] that runs your pytest suite in random order, but it runs a complete set of tests.
 
-I looked for a command to limit the number of tests that pytest runs, and I found [a Stack Overflow answer by hoefling][hoefling] that implements a `--limit=N` flag for pytest.
+I looked for a way to limit the number of tests that pytest runs, and I found [a Stack Overflow answer by hoefling][hoefling] that implements a `--limit=N` flag for pytest.
 I was able to adapt it to run a random subset of tests.
 
 Add this to `conftest.py`:
