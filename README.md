@@ -2,14 +2,6 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-Using Unicode properties for regex in python
-
->>> s = '<img alt="🌮"'
->>> import regex
->>> regex.match(r'\p{Extended_Pictographic}', s)
->>> regex.search(r'\p{Extended_Pictographic}', s)
-<regex.Match object; span=(10, 11), match='🌮'>
-
 <!-- Search these TILs at https://til.alexwlchan.net/ -->
 
 <!-- [[[cog
@@ -68,7 +60,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-12 TILs to date.
+13 TILs to date.
 
 ## applescript
 
@@ -92,6 +84,7 @@ for d in subdir_names:
 
 ## python
 
+- <a href="https://github.com/alexwlchan/til/blob/main/python/Use%20the%20regex%20library%20to%20get%20Unicode%20property%20escapes.md">Use the regex library to get Unicode property escapes</a> – 4 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/Run%20a%20randomly%20selected%20subset%20of%20tests%20with%20pytest.md">Run a randomly selected subset of tests with pytest</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/The%20sqlite3%20context%20manager%20doesn%E2%80%99t%20close%20connections.md">The sqlite3 context manager doesn’t close connections</a> – 2 January 2024
 
@@ -108,4 +101,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: b8fcb012db815c636395a662b9a8f11f) -->
+<!-- [[[end]]] (checksum: 59897a64fd41b852d8e18e50b3c0f127) -->
