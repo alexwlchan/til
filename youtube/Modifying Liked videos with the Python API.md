@@ -70,3 +70,9 @@ I got a couple of HTTP 403 errors:
 *   "The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>." – this was a rate limit on the "getting the list of likes", and I'd used a bunch of my quota while testing.
     
     I found the quotas under the "IAM and admin" panel of the Google Cloud console (after following a link from [Quota and Compliance Audits](https://developers.google.com/youtube/v3/guides/quota_and_compliance_audits)), where I could see that I'd used up my daily quota – I'll just continue the script tomorrow.
+    
+    You get 10,000 units per day, and [this table of quota costs][costs] says rating a video costs "50 units" – so I can use this method to migrate about ~100 videos a day.
+    
+    I can't this in Google's documentation, but various sites on the web e.g. Stack Overflow answers say that the quota resets at midnight Pacific Time (or ~8am in London).
+    
+[costs]: https://developers.google.com/youtube/v3/determine_quota_cost
