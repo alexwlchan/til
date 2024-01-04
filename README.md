@@ -2,6 +2,14 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
+Using Unicode properties for regex in python
+
+>>> s = '<img alt="🌮"'
+>>> import regex
+>>> regex.match(r'\p{Extended_Pictographic}', s)
+>>> regex.search(r'\p{Extended_Pictographic}', s)
+<regex.Match object; span=(10, 11), match='🌮'>
+
 <!-- Search these TILs at https://til.alexwlchan.net/ -->
 
 <!-- [[[cog
@@ -60,7 +68,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-11 TILs to date.
+12 TILs to date.
 
 ## applescript
 
@@ -69,6 +77,10 @@ for d in subdir_names:
 ## github
 
 - <a href="https://github.com/alexwlchan/til/blob/main/github/SVGs%20are%20only%20rendered%20on%20GitHub%20if%20you%20use%20an%20%3Cimg%3E%20that%20points%20to%20another%20file.md">SVGs are only rendered on GitHub if you use an &lt;img&gt; that points to another file</a> – 4 January 2024
+
+## javascript
+
+- <a href="https://github.com/alexwlchan/til/blob/main/javascript/Use%20Unicode%20property%20escapes%20to%20detect%20emoji.md">Use Unicode property escapes to detect emoji</a> – 6 September 2023
 
 ## live-text
 
@@ -96,4 +108,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 2fedd7734e22d6a3b956e7402cf35ca0) -->
+<!-- [[[end]]] (checksum: b8fcb012db815c636395a662b9a8f11f) -->
