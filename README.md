@@ -7,6 +7,7 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 <!-- [[[cog
 import frontmatter
 import datetime
+import html
 import os
 import re
 
@@ -51,14 +52,14 @@ for d in subdir_names:
     for f, fm in sorted(entries, key=lambda e: e[1]['date'], reverse=True):
         date = datetime.datetime.fromisoformat(fm['date'].split()[0]).strftime('%-d %B %Y')
 
-        title = f.replace(".md", "")
+        title = html.escape(f.replace(".md", ""))
 
         # Note: I use HTML instead of Markdown for this link because
         # Marked 2 (which I use for local Markdown previews) gets confused
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{f}">{title}</a> – {date}')
 ]]]-->
-8 TILs to date.
+9 TILs to date.
 
 ## live-text
 
@@ -78,8 +79,12 @@ for d in subdir_names:
 - <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Getting a tally of SQLite values as a CSV.md">Getting a tally of SQLite values as a CSV</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Using sqlite-utils to convert a CSV into a SQLite database.md">Using sqlite-utils to convert a CSV into a SQLite database</a> – 2 January 2024
 
+## svg
+
+- <a href="https://github.com/alexwlchan/til/blob/main/svg/Animate an attribute of an element with <animate>.md">Animate an attribute of an element with &lt;animate&gt;</a> – 4 January 2024
+
 ## youtube
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying Liked videos with the Python API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get a list of Liked videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 603ad74a0be5e8dbfbab14574dc4c0ce) -->
+<!-- [[[end]]] (checksum: c261c68716719018b95a25ea3e71e7b5) -->
