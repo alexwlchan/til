@@ -53,6 +53,9 @@ for d in subdir_names:
 
         title = f.replace(".md", "")
 
+        # Note: I use HTML instead of Markdown for this link because
+        # Marked 2 (which I use for local Markdown previews) gets confused
+        # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{f}">{title}</a> – {date}')
 ]]]-->
 8 TILs to date.
