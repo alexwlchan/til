@@ -1,14 +1,14 @@
 ---
 date: 2024-01-04 22:59:15 +0000
 ---
-Here's an AppleScript which runs `document.querySelector` in a Safari tab and returns the relevant HTML:
+Here's an AppleScript which runs `document.querySelector` in a Safari tab and returns the matching HTML:
 
 ```applescript
 tell application "Safari"
-	tell document 1
-		set selectedText to (do JavaScript "document.querySelector(\"main\").innerHTML")
-		get selectedText
-	end tell
+  tell document 1
+    set selectedText to (do JavaScript "document.querySelector(\"main\").innerHTML")
+    get selectedText
+ end tell
 end tell
 ```
 
