@@ -1,7 +1,6 @@
 ---
 date: 2024-01-04 23:47:49 +0000
 ---
-
 I was writing some code to detect and replace emoji.
 
 Maybe you can do this using the builtin `re` module by defining character classes (*"all Unicode characters in range X–Y"*) but that looks tedious and fiddly.
