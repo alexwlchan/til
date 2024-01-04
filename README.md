@@ -59,7 +59,11 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{f}">{title}</a> – {date}')
 ]]]-->
-9 TILs to date.
+10 TILs to date.
+
+## github
+
+- <a href="https://github.com/alexwlchan/til/blob/main/github/SVGs are only rendered on GitHub if you use an <img> that points to another file.md">SVGs are only rendered on GitHub if you use an &lt;img&gt; that points to another file</a> – 4 January 2024
 
 ## live-text
 
@@ -87,4 +91,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying Liked videos with the Python API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get a list of Liked videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: c261c68716719018b95a25ea3e71e7b5) -->
+<!-- [[[end]]] (checksum: 27116cd72b63f4b4e936acf918b73b08) -->
