@@ -55,7 +55,7 @@ for d in subdir_names:
 
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{f}">{title}</a> – {date}')
 ]]]-->
-7 TILs to date.
+8 TILs to date.
 
 ## live-text
 
@@ -68,6 +68,7 @@ for d in subdir_names:
 ## python
 
 - <a href="https://github.com/alexwlchan/til/blob/main/python/Run a randomly selected subset of tests with pytest.md">Run a randomly selected subset of tests with pytest</a> – 3 January 2024
+- <a href="https://github.com/alexwlchan/til/blob/main/python/The sqlite3 context manager doesn’t close connections.md">The sqlite3 context manager doesn’t close connections</a> – 2 January 2024
 
 ## sqlite
 
@@ -78,4 +79,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying Liked videos with the Python API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get a list of Liked videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 4ea9504e514e00603b6fae0d2b59c34d) -->
+<!-- [[[end]]] (checksum: 603ad74a0be5e8dbfbab14574dc4c0ce) -->
