@@ -60,7 +60,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-14 TILs to date.
+15 TILs to date.
 
 ## applescript
 
@@ -68,6 +68,7 @@ for d in subdir_names:
 
 ## github
 
+- <a href="https://github.com/alexwlchan/til/blob/main/github/Run%20the%20Netlify%20CLI%20in%20GitHub%20Actions.md">Run the Netlify CLI in GitHub Actions</a> – 6 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/github/SVGs%20are%20only%20rendered%20on%20GitHub%20if%20you%20use%20an%20%3Cimg%3E%20that%20points%20to%20another%20file.md">SVGs are only rendered on GitHub if you use an &lt;img&gt; that points to another file</a> – 4 January 2024
 
 ## javascript
@@ -105,4 +106,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: d651b74c516a8b4515cb0fa2262fae75) -->
+<!-- [[[end]]] (checksum: 4aacbd745b01db2b8d1b823735357cfc) -->
