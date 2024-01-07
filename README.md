@@ -60,11 +60,15 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-15 TILs to date.
+16 TILs to date.
 
 ## applescript
 
 - <a href="https://github.com/alexwlchan/til/blob/main/applescript/Get%20the%20contents%20of%20a%20page%20in%20Safari%20with%20%22do%20JavaScript%22.md">Get the contents of a page in Safari with &quot;do JavaScript&quot;</a> – 4 January 2024
+
+## bash
+
+- <a href="https://github.com/alexwlchan/til/blob/main/bash/Create%20a%20directory%20before%20you%20%60cp%60%20or%20%60mv%60%20a%20file%20to%20it.md">Create a directory before you `cp` or `mv` a file to it</a> – 7 January 2024
 
 ## github
 
@@ -106,4 +110,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 4aacbd745b01db2b8d1b823735357cfc) -->
+<!-- [[[end]]] (checksum: 7128b1cdf96e9df7a4dc0fb37dfcee9d) -->
