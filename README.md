@@ -60,7 +60,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-17 TILs to date.
+18 TILs to date.
 
 ## applescript
 
@@ -69,6 +69,10 @@ for d in subdir_names:
 ## bash
 
 - <a href="https://github.com/alexwlchan/til/blob/main/bash/Create%20a%20directory%20before%20you%20%60cp%60%20or%20%60mv%60%20a%20file%20to%20it.md">Create a directory before you `cp` or `mv` a file to it</a> – 7 January 2024
+
+## css
+
+- <a href="https://github.com/alexwlchan/til/blob/main/css/How%20to%20style%20a%20%3Cdetails%3E%20element%20differently%20depending%20on%20whether%20it%E2%80%99s%20open%20or%20closed.md">How to style a &lt;details&gt; element differently depending on whether it’s open or closed</a> – 7 January 2024
 
 ## github
 
@@ -97,9 +101,6 @@ for d in subdir_names:
 - <a href="https://github.com/alexwlchan/til/blob/main/python/Run%20a%20randomly%20selected%20subset%20of%20tests%20with%20pytest.md">Run a randomly selected subset of tests with pytest</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/The%20sqlite3%20context%20manager%20doesn%E2%80%99t%20close%20connections.md">The sqlite3 context manager doesn’t close connections</a> – 2 January 2024
 
-## safari
-
-
 ## sqlite
 
 - <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Getting%20a%20tally%20of%20SQLite%20values%20as%20a%20CSV.md">Getting a tally of SQLite values as a CSV</a> – 3 January 2024
@@ -114,4 +115,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 70d2d6bcc2156c733dc5860998601dbf) -->
+<!-- [[[end]]] (checksum: ad473264c781c341e89829c7f50955d5) -->
