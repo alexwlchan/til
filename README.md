@@ -60,7 +60,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-16 TILs to date.
+17 TILs to date.
 
 ## applescript
 
@@ -97,6 +97,9 @@ for d in subdir_names:
 - <a href="https://github.com/alexwlchan/til/blob/main/python/Run%20a%20randomly%20selected%20subset%20of%20tests%20with%20pytest.md">Run a randomly selected subset of tests with pytest</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/The%20sqlite3%20context%20manager%20doesn%E2%80%99t%20close%20connections.md">The sqlite3 context manager doesn’t close connections</a> – 2 January 2024
 
+## safari
+
+
 ## sqlite
 
 - <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Getting%20a%20tally%20of%20SQLite%20values%20as%20a%20CSV.md">Getting a tally of SQLite values as a CSV</a> – 3 January 2024
@@ -104,10 +107,11 @@ for d in subdir_names:
 
 ## svg
 
+- <a href="https://github.com/alexwlchan/til/blob/main/svg/Pausing%20the%20animation%20of%20%3Csvg%3E%20elements%20can%20affect%20child%20%3Csvg%3E%20elements%20differently%20in%20different%20browsers.md">Pausing the animation of &lt;svg&gt; elements can affect child &lt;svg&gt; elements differently in different browsers</a> – 7 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/svg/Animate%20an%20attribute%20of%20an%20element%20with%20%3Canimate%3E.md">Animate an attribute of an element with &lt;animate&gt;</a> – 4 January 2024
 
 ## youtube
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 7128b1cdf96e9df7a4dc0fb37dfcee9d) -->
+<!-- [[[end]]] (checksum: 70d2d6bcc2156c733dc5860998601dbf) -->
