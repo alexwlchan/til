@@ -32,7 +32,7 @@ This is based on JavaScript code [written by Jorik Tangelder][jorik], but adapte
 
 ## Flags for subdivisions of countries (e.g. Scotland, Wales)
 
-Some countries are subdivisions of other countries, but they still have flags, e.g. Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿, Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿.
+Some countries are subdivisions of other countries, and some of those subdivisions have flags.
 
 pycountry doesn't have flags for subdivisions, e.g.
 
@@ -49,17 +49,21 @@ AttributeError
 And these flags aren't constructed from two-character regional codes.
 e.g. the Scottish flag combines black flag, five regional indicator symbols, and a closing symbol: 🏴󠁧󠁢󠁳󠁣󠁴󠁿 = 🏴​ 🇬​🇧​🇸​🇨​🇹 ​U+E007F
 
-The best approach I've found so far is to hard-code exceptions for these where necessary:
+The best approach I've found is to hard-code exceptions for these where necessary:
 
 ```python
 def get_flag_emoji(country_id: str) -> str:
-    if country_id == "GBSCT":
+    if country_id == "GB-SCT":
         return "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
 
-    if country_id == "GBWLS":
+    if country_id == "GB-WLS":
         return "🏴󠁧󠁢󠁷󠁬󠁳󠁿"
 
    …
 ```
 
-But I'm sure there must be a more thorough approach that I haven't found yet.
+Note that [Emojipedia's page about flags][emojipedia] suggests this may be a relatively uncommon case, and just a few edge cases may be enough to handle it:
+
+> Emoji country flags are based on ISO 3166-1: a list of internationally recognized two-letter country codes. As of 2021 England, Scotland and Wales are the only RGI subdivision flags.
+
+[emojipedia]: https://emojipedia.org/flags
