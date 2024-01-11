@@ -60,7 +60,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-21 TILs to date.
+22 TILs to date.
 
 ## applescript
 
@@ -81,6 +81,7 @@ for d in subdir_names:
 
 ## javascript
 
+- <a href="https://github.com/alexwlchan/til/blob/main/javascript/Sort%20a%20list%20of%20DOM%20elements%20by%20sorting%20and%20calling%20appendChild%28%29.md">Sort a list of DOM elements by sorting and calling appendChild()</a> – 11 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/javascript/Use%20Unicode%20property%20escapes%20to%20detect%20emoji.md">Use Unicode property escapes to detect emoji</a> – 6 September 2023
 
 ## live-text
@@ -101,9 +102,6 @@ for d in subdir_names:
 - <a href="https://github.com/alexwlchan/til/blob/main/python/Use%20the%20regex%20library%20to%20get%20Unicode%20property%20escapes.md">Use the regex library to get Unicode property escapes</a> – 4 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/Run%20a%20randomly%20selected%20subset%20of%20tests%20with%20pytest.md">Run a randomly selected subset of tests with pytest</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/The%20sqlite3%20context%20manager%20doesn%E2%80%99t%20close%20connections.md">The sqlite3 context manager doesn’t close connections</a> – 2 January 2024
-
-## safari
-
 
 ## spreadsheets
 
@@ -127,4 +125,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 4ab9072ef8f2129785bc672d1455a676) -->
+<!-- [[[end]]] (checksum: c2f1a65dbb007e569a647af24fc37f65) -->
