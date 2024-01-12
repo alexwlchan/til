@@ -38,8 +38,6 @@ for i, dirname in enumerate(subdir_names, start=1):
 cog.outl(f"{total_entries} TILs to date.")
 
 for d in subdir_names:
-    cog.outl(f"\n## {d}\n")
-
     entries = []
 
     for f in os.listdir(d):
@@ -49,6 +47,11 @@ for d in subdir_names:
         fm = frontmatter.load(os.path.join(d, f))
 
         entries.append((f, fm))
+
+    if not entries:
+        continue
+
+    cog.outl(f"\n## {d}\n")
 
     for f, fm in sorted(entries, key=lambda e: e[1]['date'], reverse=True):
         date = datetime.datetime.fromisoformat(fm['date'].split()[0]).strftime('%-d %B %Y')
@@ -104,9 +107,6 @@ for d in subdir_names:
 - <a href="https://github.com/alexwlchan/til/blob/main/python/Run%20a%20randomly%20selected%20subset%20of%20tests%20with%20pytest.md">Run a randomly selected subset of tests with pytest</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/The%20sqlite3%20context%20manager%20doesn%E2%80%99t%20close%20connections.md">The sqlite3 context manager doesn’t close connections</a> – 2 January 2024
 
-## safari
-
-
 ## spreadsheets
 
 - <a href="https://github.com/alexwlchan/til/blob/main/spreadsheets/Use%20the%20IMAGE%20function%20to%20insert%20an%20image%20into%20a%20spreadsheet.md">Use the IMAGE function to insert an image into a spreadsheet</a> – 9 January 2024
@@ -129,4 +129,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: eb4fd4bbdab29f0c1d27bdac965cd1d7) -->
+<!-- [[[end]]] (checksum: 8dea5d3f345485b35c5525b7905e8b5b) -->
