@@ -39,3 +39,43 @@ audiofile.tag.save()
 
 [eyed3.core.Date]: https://github.com/nicfit/eyeD3/blob/5108937485555c81ca992a4def7d74f860ee978d/eyed3/core.py#L246
 [getBestDate]: https://github.com/nicfit/eyeD3/blob/5108937485555c81ca992a4def7d74f860ee978d/eyed3/id3/tag.py#L480
+
+## Artwork
+
+In iTunes, you can set one or image images as artwork for a track: `Get Info` > `Artwork`.
+
+To retrieve these images with eyed3:
+
+```python
+import io
+
+import eyed3  # 0.9.7
+from PIL import Image
+
+audiofile = eyed3.load("song.mp3")
+
+for i, af_image in enumerate(audiofile.tag.images):
+    im = Image.open(io.BytesIO(af_image.image_data))
+    im.save(f'image-{i}.{im.format.lower()}')
+    # image-0.jpg, image-1.png, ...
+```
+
+To store artwork with eyed3:
+
+```python
+import eyed3
+from eyed3.id3.frames import ImageFrame
+from PIL import Image
+
+audiofile = eyed3.load("song.mp3")
+
+artwork = "album-art.png"
+
+audiofile.tag.images.set(
+    ImageFrame.OTHER,
+    img_data=open(artwork, "rb").read(),
+    mime_type=Image.open(artwork).get_format_mimetype()
+)
+
+audiofile.tag.save()
+```
