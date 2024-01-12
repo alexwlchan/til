@@ -60,7 +60,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-22 TILs to date.
+23 TILs to date.
 
 ## applescript
 
@@ -98,10 +98,14 @@ for d in subdir_names:
 
 ## python
 
+- <a href="https://github.com/alexwlchan/til/blob/main/python/Manage%20MP3%20metadata%20from%20iTunes%20with%20eyed3.md">Manage MP3 metadata from iTunes with eyed3</a> – 12 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/Create%20flag%20emojis%20for%20countries.md">Create flag emojis for countries</a> – 10 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/Use%20the%20regex%20library%20to%20get%20Unicode%20property%20escapes.md">Use the regex library to get Unicode property escapes</a> – 4 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/Run%20a%20randomly%20selected%20subset%20of%20tests%20with%20pytest.md">Run a randomly selected subset of tests with pytest</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/The%20sqlite3%20context%20manager%20doesn%E2%80%99t%20close%20connections.md">The sqlite3 context manager doesn’t close connections</a> – 2 January 2024
+
+## safari
+
 
 ## spreadsheets
 
@@ -125,4 +129,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: c2f1a65dbb007e569a647af24fc37f65) -->
+<!-- [[[end]]] (checksum: eb4fd4bbdab29f0c1d27bdac965cd1d7) -->
