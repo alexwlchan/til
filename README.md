@@ -63,7 +63,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-25 TILs to date.
+26 TILs to date.
 
 ## applescript
 
@@ -87,6 +87,10 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/javascript/Sort%20a%20list%20of%20DOM%20elements%20by%20sorting%20and%20calling%20appendChild%28%29.md">Sort a list of DOM elements by sorting and calling appendChild()</a> – 11 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/javascript/Use%20Unicode%20property%20escapes%20to%20detect%20emoji.md">Use Unicode property escapes to detect emoji</a> – 6 September 2023
+
+## liquid
+
+- <a href="https://github.com/alexwlchan/til/blob/main/liquid/Use%20the%20%7B%25%20capture%20%25%7D%20tag%20to%20assign%20complex%20strings%20to%20variables.md">Use the {% capture %} tag to assign complex strings to variables</a> – 12 January 2024
 
 ## live-text
 
@@ -131,4 +135,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 8e73df28beac4d02dcf62b2be3460ad3) -->
+<!-- [[[end]]] (checksum: 7d9da79124f7ec099a27d43916ba7e46) -->
