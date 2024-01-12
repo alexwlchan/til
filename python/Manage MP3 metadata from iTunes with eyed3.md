@@ -79,3 +79,7 @@ audiofile.tag.images.set(
 
 audiofile.tag.save()
 ```
+
+Note that this [set() function][set] takes two optional parameters: `description` and `img_url`.
+
+[set]: https://github.com/nicfit/eyeD3/blob/5108937485555c81ca992a4def7d74f860ee978d/eyed3/id3/tag.py#L1595
