@@ -1,6 +1,8 @@
 ---
 date: 2023-10-16 16:45:35 +0000
 ---
+## Using Special:MediaSearch
+
 You can do structured data queries using [Special:MediaSearch](https://www.mediawiki.org/wiki/Help:MediaSearch#Statements_and_structured_data).
 Here are a couple of examples:
 
@@ -13,4 +15,21 @@ Here are a couple of examples:
 
     *   Images with P7482=Q66458942 (source of file is original creation by uploader): <https://commons.wikimedia.org/wiki/Special:MediaSearch?search=haswbstatement%3AP7482%3DQ66458942&type=image>
 
-You can also do this with the Commons Query Service, but I haven't tried that in a while so I don't have notes on how that works.
+## Using the Commons Query Service
+
+You can run SPARQL queries with the [Commons Query Service](https://commons.wikimedia.org/wiki/Commons:SPARQL_query_service).
+I'm not super experienced with SPARQL, but I'll use this as a place to gather queries I've been able to get working.
+
+*   This is a query that finds files which have a P7482=Q74228490, P137=Q420747, and one of two Flickr URLs in the P973 field.
+
+    ```sparql
+    SELECT ?item ?described_url WHERE {
+      ?item wdt:P7482 wd:Q74228490 .       # P7482 (source of file) = Q74228490 (file available on the internet)
+      ?item p:P7482 ?statement .
+      ?statement pq:P137 wd:Q103204.       # P137 (operator) = Q420747 (National Library of Finland)
+      ?statement pq:P973 ?described_url.
+      VALUES (?described_url) { (<https://www.flickr.com/photos/sunrise/29916169/>) (<https://www.flickr.com/photos/sunrise/29916169>) }
+    } LIMIT 1
+    ```
+
+    [Link to query in WCQS](https://commons-query.wikimedia.org/#SELECT%20%3Fitem%20%3Fdescribed_url%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP7482%20wd%3AQ74228490%20.%20%20%20%20%20%20%20%23%20P7482%20%28source%20of%20file%29%20%3D%20Q74228490%20%28file%20available%20on%20the%20internet%29%0A%20%20%3Fitem%20p%3AP7482%20%3Fstatement%20.%0A%20%20%3Fstatement%20pq%3AP137%20wd%3AQ103204.%20%20%20%20%20%20%20%23%20P137%20%28operator%29%20%3D%20Q420747%20%28National%20Library%20of%20Finland%29%0A%20%20%3Fstatement%20pq%3AP973%20%3Fdescribed_url.%0A%20%20VALUES%20%28%3Fdescribed_url%29%20%7B%20%28%3Chttps%3A%2F%2Fwww.flickr.com%2Fphotos%2Fsunrise%2F29916169%2F%3E%29%20%28%3Chttps%3A%2F%2Fwww.flickr.com%2Fphotos%2Fsunrise%2F29916169%3E%29%20%7D%0A%7D%20LIMIT%201), which returns a single result.
