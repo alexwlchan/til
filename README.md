@@ -131,12 +131,12 @@ for d in subdir_names:
 
 ## wikimedia-commons
 
-- <a href="https://github.com/alexwlchan/til/blob/main/wikimedia-commons/Why%20the%20term%20%22snak%22%20keeps%20appearing%20in%20the%20API.md">Why the term &quot;snak&quot; keeps appearing in the API</a> – 16 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/wikimedia-commons/Go%20between%20the%20M-IDs%20and%20filenames.md">Go between the M-IDs and filenames</a> – 8 December 2023
 - <a href="https://github.com/alexwlchan/til/blob/main/wikimedia-commons/How%20to%20find%20files%20that%20use%20a%20particular%20SDC%20field.md">How to find files that use a particular SDC field</a> – 16 October 2023
+- <a href="https://github.com/alexwlchan/til/blob/main/wikimedia-commons/Why%20the%20term%20%22snak%22%20keeps%20appearing%20in%20the%20API.md">Why the term &quot;snak&quot; keeps appearing in the API</a> – 10 October 2023
 
 ## youtube
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: f124c0ed766a060e82b4e5cd3eecf06d) -->
+<!-- [[[end]]] (checksum: c1e2e4631d48dd511dcf6df1a3c26352) -->

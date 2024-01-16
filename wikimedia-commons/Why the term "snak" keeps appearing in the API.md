@@ -1,5 +1,5 @@
 ---
-date: 2024-01-16 15:42:27 +0000
+date: 2023-10-10 15:42:27 +0000
 ---
 From [Wikibase/DataModel](https://www.mediawiki.org/wiki/Wikibase/DataModel#Overview_of_the_data_model):
 
