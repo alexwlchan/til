@@ -63,7 +63,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-39 TILs to date.
+40 TILs to date.
 
 ## applescript
 
@@ -72,6 +72,10 @@ for d in subdir_names:
 ## bash
 
 - <a href="https://github.com/alexwlchan/til/blob/main/bash/Create%20a%20directory%20before%20you%20%60cp%60%20or%20%60mv%60%20a%20file%20to%20it.md">Create a directory before you `cp` or `mv` a file to it</a> – 7 January 2024
+
+## buildkite
+
+- <a href="https://github.com/alexwlchan/til/blob/main/buildkite/Use%20concurrency%20gates%20to%20prevent%20concurrent%20deployments.md">Use concurrency gates to prevent concurrent deployments</a> – 1 June 2023
 
 ## css
 
@@ -169,4 +173,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 8660bddb981463f1e6a3bbd7746bc1a2) -->
+<!-- [[[end]]] (checksum: 66101d222a120c5ecbe08f3f314f4f92) -->
