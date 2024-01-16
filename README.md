@@ -63,7 +63,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-31 TILs to date.
+32 TILs to date.
 
 ## applescript
 
@@ -77,6 +77,10 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/css/How%20to%20create%20a%20footer%20that%E2%80%99s%20always%20at%20the%20bottom%20of%20the%20page.md">How to create a footer that’s always at the bottom of the page</a> – 12 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/css/How%20to%20style%20a%20%3Cdetails%3E%20element%20differently%20depending%20on%20whether%20it%E2%80%99s%20open%20or%20closed.md">How to style a &lt;details&gt; element differently depending on whether it’s open or closed</a> – 7 January 2024
+
+## curl
+
+- <a href="https://github.com/alexwlchan/til/blob/main/curl/How%20to%20do%20resumable%20downloads.md">How to do resumable downloads</a> – 17 October 2023
 
 ## flickr
 
@@ -143,4 +147,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 7f2d737b9261aad98813a68a312313e2) -->
+<!-- [[[end]]] (checksum: 59c64228b5ca9eca42dd4ea749fb0295) -->
