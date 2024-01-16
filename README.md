@@ -63,7 +63,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-32 TILs to date.
+33 TILs to date.
 
 ## applescript
 
@@ -137,6 +137,10 @@ for d in subdir_names:
 - <a href="https://github.com/alexwlchan/til/blob/main/svg/Pausing%20the%20animation%20of%20%3Csvg%3E%20elements%20can%20affect%20child%20%3Csvg%3E%20elements%20differently%20in%20different%20browsers.md">Pausing the animation of &lt;svg&gt; elements can affect child &lt;svg&gt; elements differently in different browsers</a> – 7 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/svg/Animate%20an%20attribute%20of%20an%20element%20with%20%3Canimate%3E.md">Animate an attribute of an element with &lt;animate&gt;</a> – 4 January 2024
 
+## swift
+
+- <a href="https://github.com/alexwlchan/til/blob/main/swift/How%20to%20profile%20Swift%20code.md">How to profile Swift code</a> – 23 May 2023
+
 ## wikimedia-commons
 
 - <a href="https://github.com/alexwlchan/til/blob/main/wikimedia-commons/Go%20between%20the%20M-IDs%20and%20filenames.md">Go between the M-IDs and filenames</a> – 8 December 2023
@@ -147,4 +151,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: 59c64228b5ca9eca42dd4ea749fb0295) -->
+<!-- [[[end]]] (checksum: 37a275d099392e24f4992ca39d5de694) -->
