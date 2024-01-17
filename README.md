@@ -63,7 +63,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-34 TILs to date.
+35 TILs to date.
 
 ## applescript
 
@@ -133,6 +133,7 @@ for d in subdir_names:
 
 ## sqlite
 
+- <a href="https://github.com/alexwlchan/til/blob/main/sqlite/How%20to%20tally%20combinations%20of%20values%20across%20multiple%20columns.md">How to tally combinations of values across multiple columns</a> – 17 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Getting%20a%20tally%20of%20SQLite%20values%20as%20a%20CSV.md">Getting a tally of SQLite values as a CSV</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/sqlite/Using%20sqlite-utils%20to%20convert%20a%20CSV%20into%20a%20SQLite%20database.md">Using sqlite-utils to convert a CSV into a SQLite database</a> – 2 January 2024
 
@@ -155,4 +156,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: f5eec36dbea4470f5d89dda3d04a00df) -->
+<!-- [[[end]]] (checksum: 8088d57e072103af11f0bbd6b2cfe4ef) -->
