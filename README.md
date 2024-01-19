@@ -63,7 +63,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-36 TILs to date.
+37 TILs to date.
 
 ## applescript
 
@@ -118,6 +118,7 @@ for d in subdir_names:
 
 ## python
 
+- <a href="https://github.com/alexwlchan/til/blob/main/python/Do%20offline%20geo-lookups%20of%20IP%20addresses.md">Do offline geo-lookups of IP addresses</a> – 19 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/How%20to%20gracefully%20restart%20a%20gunicorn%20app.md">How to gracefully restart a gunicorn app</a> – 16 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/How%20to%20find%20the%20longest%20common%20suffix%20in%20a%20list%20of%20strings.md">How to find the longest common suffix in a list of strings</a> – 14 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/python/How%20to%20simulate%20shell%20pipes%20with%20the%20subprocess%20module.md">How to simulate shell pipes with the subprocess module</a> – 13 January 2024
@@ -160,4 +161,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: a497f91e549ce7b3bee289a18780d202) -->
+<!-- [[[end]]] (checksum: be34333d8d5e53349b637e3bb57086f3) -->
