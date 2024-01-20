@@ -67,7 +67,7 @@ for d in subdir_names:
 
 ## applescript
 
-- <a href="https://github.com/alexwlchan/til/blob/main/applescript/Get%20the%20contents%20of%20a%20page%20in%20Safari%20with%20%22do%20JavaScript%22.md">Get the contents of a page in Safari with &quot;do JavaScript&quot;</a> – 4 January 2024
+- <a href="https://github.com/alexwlchan/til/blob/main/applescript/Get%20and%20manipulate%20the%20contents%20of%20a%20page%20in%20Safari%20with%20%22do%20JavaScript%22.md">Get and manipulate the contents of a page in Safari with &quot;do JavaScript&quot;</a> – 4 January 2024
 
 ## bash
 
@@ -161,4 +161,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: be34333d8d5e53349b637e3bb57086f3) -->
+<!-- [[[end]]] (checksum: b64a35ed50a86f025a591d9f5aad2f4f) -->
