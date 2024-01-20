@@ -6,10 +6,9 @@ Here's an AppleScript which runs `document.querySelector` in a Safari tab and re
 
 ```applescript
 tell application "Safari"
-  tell document 1
-    set selectedText to (do JavaScript "document.querySelector(\"main\").innerHTML")
-    get selectedText
- end tell
+    tell document 1
+        get (do JavaScript "document.querySelector(\"main\").innerHTML")
+    end tell
 end tell
 ```
 
@@ -36,9 +35,9 @@ This is the AppleScript I used:
 
 ```applescript
 tell application "Safari"
-	tell document 1
-		get (do JavaScript "document.querySelector('article').innerHTML")
-	end tell
+    tell document 1
+        get (do JavaScript "document.querySelector('article').innerHTML")
+    end tell
 end tell
 ```
 
@@ -57,36 +56,36 @@ I opened the two accounts in different windows, and then I repeatedly ran this A
 
 ```applescript
 tell application "Safari"
-	-- Get the path to the video at the top of the playlist in window 1
-	-- e.g. /watch?v=123456789
-	tell tab 1 of window 1
-		set theYouTubeUrl to do JavaScript "document.querySelector('a#video-title.ytd-playlist-video-renderer').getAttribute('href')"
-	end tell
+    -- Get the path to the video at the top of the playlist in window 1
+    -- e.g. /watch?v=123456789
+    tell tab 1 of window 1
+        set theYouTubeUrl to do JavaScript "document.querySelector('a#video-title.ytd-playlist-video-renderer').getAttribute('href')"
+    end tell
 
-	tell tab 1 of window 2
-		-- Open that video in window 2, and wait for it to load
-		set the URL to "https://www.youtube.com" & theYouTubeUrl
-		delay 5
+    tell tab 1 of window 2
+        -- Open that video in window 2, and wait for it to load
+        set the URL to "https://www.youtube.com" & theYouTubeUrl
+        delay 5
 
-		-- Open the actions menu, which contains the "Save" button, and wait
+        -- Open the actions menu, which contains the "Save" button, and wait
     -- for the menu to open
-		do JavaScript "document.querySelector('button[aria-label=\"More actions\"]').click()"
-		delay 1
+        do JavaScript "document.querySelector('button[aria-label=\"More actions\"]').click()"
+        delay 1
 
-		-- Click the "Save" button, and wait for the next dialog to appear
-		do JavaScript "document.querySelectorAll('.ytd-menu-service-item-renderer').forEach(function(r) { if (r.innerHTML === 'Save') { r.click(); } })"
-		delay 1
+        -- Click the "Save" button, and wait for the next dialog to appear
+        do JavaScript "document.querySelectorAll('.ytd-menu-service-item-renderer').forEach(function(r) { if (r.innerHTML === 'Save') { r.click(); } })"
+        delay 1
 
-		-- The next dialog will show a list of playlists; click the checkbox
-		-- for "Watch Later"
-		do JavaScript "document.querySelector('yt-formatted-string[aria-label=\"Watch Later Private\"]').click()"
-	end tell
+        -- The next dialog will show a list of playlists; click the checkbox
+        -- for "Watch Later"
+        do JavaScript "document.querySelector('yt-formatted-string[aria-label=\"Watch Later Private\"]').click()"
+    end tell
 
-	tell tab 1 of window 1
-		-- Open the "Actions" menu in window 1, which includes the "Remove from
+    tell tab 1 of window 1
+        -- Open the "Actions" menu in window 1, which includes the "Remove from
     -- Watch Later" button.
-		do JavaScript "document.querySelector('.ytd-playlist-video-list-renderer button[aria-label=\"Action menu\"]').click()"
-	end tell
+        do JavaScript "document.querySelector('.ytd-playlist-video-list-renderer button[aria-label=\"Action menu\"]').click()"
+    end tell
 end tell
 ```
 
