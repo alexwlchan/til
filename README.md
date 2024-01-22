@@ -63,7 +63,7 @@ for d in subdir_names:
         # by spaces in the URL portion of Markdown links.
         cog.outl(f'- <a href="https://github.com/alexwlchan/til/blob/main/{d}/{urlquote(f)}">{title}</a> – {date}')
 ]]]-->
-38 TILs to date.
+39 TILs to date.
 
 ## applescript
 
@@ -111,6 +111,10 @@ for d in subdir_names:
 ## live-text
 
 - <a href="https://github.com/alexwlchan/til/blob/main/live-text/Live%20Text%20is%20aware%20of%20how%20hyphenation%20works.md">Live Text is aware of how hyphenation works</a> – 26 December 2023
+
+## macos
+
+- <a href="https://github.com/alexwlchan/til/blob/main/macos/Run%20a%20script%20on%20a%20schedule%20as%20a%20LaunchAgent.md">Run a script on a schedule as a LaunchAgent</a> – 22 January 2024
 
 ## nginx
 
@@ -165,4 +169,4 @@ for d in subdir_names:
 
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Modifying%20Liked%20videos%20with%20the%20Python%20API.md">Modifying Liked videos with the Python API</a> – 3 January 2024
 - <a href="https://github.com/alexwlchan/til/blob/main/youtube/Get%20a%20list%20of%20Liked%20videos.md">Get a list of Liked videos</a> – 3 January 2024
-<!-- [[[end]]] (checksum: a3538c3932b832eed98dd23baefc35e9) -->
+<!-- [[[end]]] (checksum: 8660bddb981463f1e6a3bbd7746bc1a2) -->
