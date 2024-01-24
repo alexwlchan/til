@@ -1,6 +1,4 @@
-export DOCKER_IMAGE_NAME = ghcr.io/alexwlchan/alexwlchan.net
-export DOCKER_IMAGE_VERSION = 42
-DOCKER_IMAGE = $(DOCKER_IMAGE_NAME):$(DOCKER_IMAGE_VERSION)
+DOCKER_IMAGE = ghcr.io/alexwlchan/jekyll-run:1
 
 ROOT = $(shell git rev-parse --show-toplevel)
 
@@ -50,10 +48,3 @@ deploy-prod:
 		--workdir $(ROOT) \
 		ghcr.io/williamjacksn/netlify-cli:17.10.1 \
 		deploy --prod --auth "$(NETLIFY_AUTH_TOKEN)"
-
-plugin-tests:
-	docker run --tty --rm \
-		--entrypoint ruby \
-		--volume $(ROOT):$(ROOT) \
-		--workdir $(ROOT) \
-		$(DOCKER_IMAGE) src/_jekyll/tests/tests.rb
