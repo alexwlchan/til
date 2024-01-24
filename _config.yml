@@ -7,16 +7,13 @@ date_format: "%-d %B %Y"
 
 permalink: "/:year/:title/"
 
-# This is the file used by Netlify to define redirects and the custom
-# 404 page.  If we don't include this, Jekyll skips it in the sitebuild.
-include:
-  - "_redirects"
-
 markdown: "kramdown"
 
 kramdown:
   auto_ids: true
   smart_quotes: "lsquo,rsquo,ldquo,rdquo"
+
+highlighter: "rouge"
 
 plugins:
   - "jekyll-include-cache"
