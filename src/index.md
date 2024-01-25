@@ -3,12 +3,11 @@ layout: page
 title: ""
 ---
 
-etgrsiugriouewrfg
-
-Homepage
-
 <ul>
-{% for p in posts %}
-<li>{{ p }}</li>
+{% for p in site.posts %}
+<li>
+  <a href="{{ p.url }}">{{ p.title }}</a><br/>
+  {{ p.tags }} / {{ p.date }}
+</li>
 {% endfor %}
 </ul>
