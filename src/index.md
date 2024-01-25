@@ -5,7 +5,7 @@ title: ""
 
 <style>
   footer {
-    margin-top: 100vh;
+    margin-top: 80vh;
   }
 </style>
 
