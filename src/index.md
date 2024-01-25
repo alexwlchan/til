@@ -10,7 +10,7 @@ title: ""
 <ul class="dot_list">
   {% for t in sorted_tags %}
   <li>
-    <a href="#{{ t[0] }}">{{ t[0] }}</a>&nbsp;({{ t[1] | size }})
+    <a href="#{{ t[0] }}" class="novisited">{{ t[0] }}</a>&nbsp;({{ t[1] | size }})
   </li>
   {% endfor %}
 </ul>

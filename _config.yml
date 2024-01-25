@@ -9,7 +9,7 @@ destination: "_site"
 
 date_format: "%-d %B %Y"
 
-permalink: "/:year/:title/"
+permalink: "/:title/"
 
 markdown: "kramdown"
 
