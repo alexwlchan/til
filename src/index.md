@@ -3,23 +3,18 @@ layout: page
 title: ""
 ---
 
-<style>
-  footer {
-    margin-top: 80vh;
-  }
-</style>
+This site is as a sort of <a href="https://winterflower.github.io/2017/08/17/software-engineering-notebook/">“digital lab notebook”</a> – a collection of things I’ve learnt while doing software development and browsing the Internet that I thought were worth remembering.
 
-TIL = Today I Learned.
+<!-- The term "TIL" stands for "Today I Learned". -->
 
-You can think of this site as a sort of <a href="https://winterflower.github.io/2017/08/17/software-engineering-notebook/">“digital lab notebook”</a> – a collection of things I’ve learnt while doing software development and browsing the Internet that I thought were worth remembering.
+<!-- There are {{ site.posts | size }} TILs so far. -->
 
-There are {{ site.posts | size }} TILs so far.
 You can <a href="/atom.xml">subscribe to the RSS feed</a> to get new TILs.
 
 {% assign sorted_tags = site.data["tag_tally"] | sort %}
 
 <p style="display: inline;">
-  Browse by tag:
+  <strong>Browse by tag:</strong>
 </p>
 <ul class="dot_list" style="display: inline;">
   {% for t in sorted_tags %}
@@ -44,3 +39,10 @@ You can <a href="/atom.xml">subscribe to the RSS feed</a> to get new TILs.
 </ul>
 
 {% endfor %}
+
+<!-- This number is eyeballed to ensure that the final item always
+    has enough whitespace for the anchor link -->
+
+<p style="margin-top: calc(100vh - 330px);">
+  (This paragraph is just here to ensure there’s enough whitespace for the final anchor link to scroll to the right place.)
+</p>

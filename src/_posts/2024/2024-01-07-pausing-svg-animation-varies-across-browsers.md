@@ -1,5 +1,9 @@
 ---
+layout: post
+title: "Pausing the animation of &lt;svg&gt; elements can affect child &lt;svg&gt; elements differently in different browsers"
 date: 2024-01-07 20:49:46 +0000
+tags:
+  - svg
 ---
 Consider the following SVG, which contains two animated rectangles:
 
