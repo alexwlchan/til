@@ -1,5 +1,10 @@
 ---
+layout: post
+title: "The acronym \"woe\" in the Flickr API stands for \"Where On Earth\""
 date: 2023-10-02 17:29:30 +0000
+tags:
+  - flickr
+  - naming-things
 ---
 For example, the parameter in the [flickr.places.placesForContacts API][api]:
 

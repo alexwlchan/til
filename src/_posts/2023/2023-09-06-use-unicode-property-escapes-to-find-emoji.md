@@ -1,5 +1,10 @@
 ---
+layout: post
+title: Use Unicode property escapes to detect emoji in JavaScript
 date: 2023-09-06 23:46:15 +0000
+tags:
+  - javascript
+  - unicode
 ---
 From [how to detect emoji using JavaScript](https://stackoverflow.com/a/64007175/1558022) on Stack Overflow:
 
