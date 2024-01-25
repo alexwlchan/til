@@ -1,5 +1,9 @@
 ---
+layout: post
+title: How to simulate shell pipes with the subprocess module
 date: 2024-01-13 10:57:17 +0000
+tags:
+  - python
 ---
 I had a shell command featuring a pipe that I wanted to replicate with subprocess:
 

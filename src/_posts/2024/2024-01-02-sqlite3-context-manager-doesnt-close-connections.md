@@ -1,5 +1,10 @@
 ---
+layout: post
+title: Python's sqlite3 context manager doesn’t close connections
 date: 2024-01-02 07:18:04 +0000
+tags:
+  - python
+  - sqlite
 ---
 I was working on an app that started failing in prod with an error “too many open files”, and I think it was because I wasn't closing SQLite database connections properly.
 
@@ -23,7 +28,7 @@ import sqlite3
 
 with sqlite3.connect('test.db') as connection:
     # do some stuff in the database
-    
+
 # out of the context manager, database is still open
 ```
 

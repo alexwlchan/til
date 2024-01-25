@@ -1,5 +1,9 @@
 ---
+layout: post
+title: How to find the longest common suffix in a list of strings in Python
 date: 2024-01-14 09:27:19 +0000
+tags:
+  - python
 ---
 There are lots of ways to do this; this is my go-to implementation that pushes the heavy lifting off to `os.path.commonprefix`, and seems to have served me fairly well so far.
 Plus tests!

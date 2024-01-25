@@ -1,5 +1,10 @@
 ---
+layout: post
+title: How to create flag emojis for countries in Python
 date: 2024-01-10 10:31:11 +0000
+tags:
+  - python
+  - unicode
 ---
 ## Flags for countries with 2-character codes
 

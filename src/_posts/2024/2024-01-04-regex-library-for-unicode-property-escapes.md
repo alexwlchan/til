@@ -1,5 +1,10 @@
 ---
+layout: post
+title: Use the regex library to get Unicode property escapes in Python
 date: 2024-01-04 23:47:49 +0000
+tags:
+  - python
+  - unicode
 ---
 I was writing some code to detect and replace emoji.
 

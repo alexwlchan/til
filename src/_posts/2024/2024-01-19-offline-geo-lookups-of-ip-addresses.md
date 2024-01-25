@@ -1,5 +1,10 @@
 ---
+layoust: post
+title: How to do offline geo-lookups of IP addresses
 date: 2024-01-19 10:25:34 +0000
+tags:
+  - python
+  - networking
 ---
 I was experimenting with web analytics, and I wanted a way to look up the country for an IP address -- in a privacy-preserving way.
 

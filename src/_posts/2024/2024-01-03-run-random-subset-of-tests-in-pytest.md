@@ -1,5 +1,9 @@
 ---
+layout: post
+title: Run a randomly selected subset of tests with pytest
 date: 2024-01-03 17:22:34 +0000
+tags:
+  - python
 ---
 This is a question asked [by Ned Batchelder][nedbat] on Mastodon.
 
