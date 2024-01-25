@@ -3,11 +3,14 @@ layout: page
 title: ""
 ---
 
-### Tags
+<p style="margin-top: 3em;">
+  Think of this as a sort of <a href="https://winterflower.github.io/2017/08/17/software-engineering-notebook/">“digital lab notebook”</a> – a collection of things I’ve learnt while doing software development and browsing the Internet that I thought were worth remembering.
+</p>
 
 {% assign sorted_tags = site.data["tag_tally"] | sort %}
 
-<ul class="dot_list">
+<p style="display: inline;">Browse by tag:</p>
+<ul class="dot_list" style="display: inline;">
   {% for t in sorted_tags %}
   <li>
     <a href="#{{ t[0] }}" class="novisited">{{ t[0] }}</a>&nbsp;({{ t[1] | size }})
@@ -15,7 +18,7 @@ title: ""
   {% endfor %}
 </ul>
 
----
+<img src="/notebook.png">
 
 {% for t in sorted_tags %}
 {% assign tag_name = t[0] %}
