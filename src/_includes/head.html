@@ -15,8 +15,17 @@
 <link rel="stylesheet" href="https://alexwlchan.net/styles/style.css">
 
 <style>
-  nav #nav_inner a:hover img {
-    opacity: 0.8;
+  nav h1 {
+    margin: 0;
+  }
+
+  #nav_inner {
+    padding-top:    5px;
+    padding-bottom: 10px;
+  }
+
+  nav h1 a {
+    font-size: 13pt;
   }
 
   body {
@@ -24,12 +33,12 @@
   }
 
   nav {
-    background: url("/specktre_17823e.png") !important;
-    background-size: auto 100% !important;
+    background: url("/specktre_17823e.png") #17823e;
+    background-size: auto 100%;
   }
 </style>
 
-<style>h1,h2,.title a:visited,.post__permalink a,.post__permalink a:visited{color:#17823e}a{color:#17823e}a:hover{background:rgba(23,130,62,.2)}a:visited:not(.novisited){color:#0c411f}a:visited:not(.novisited):hover{background:rgba(12,65,31,.2)}a.download{border-color:#17823e;color:#17823e !important;background:rgba(255,255,255,.4) !important}a.download:hover{background:rgba(23,130,62,.2) !important}pre,blockquote{border-color:rgba(23,130,62,.1);background-color:rgba(233,251,240,.4)}#subscribe{border-color:#17823e;background-color:rgba(168,240,194,.4)}#subscribe input[type=submit]{background-color:#17823e}nav{background:url("/specktre_17823e.png") #17823e;background-size:auto 100%}footer{background:#17823e}@media(prefers-color-scheme: dark){a{color:#26d967}a:hover{background:rgba(38,217,103,.2)}a:visited:not(.novisited){color:#67e495}a:visited:not(.novisited):hover{background:rgba(103,228,149,.1)}h1,h2,.title a:visited,.post__permalink a,.post__permalink a:visited{color:#26d967}a.download{border-color:#26d967;color:#26d967 !important;background:rgba(0,0,0,.6) !important}a.download:hover{background:rgba(38,217,103,.4) !important}pre,blockquote{border-color:rgba(38,217,103,.3);background-color:rgba(4,22,10,.7)}#subscribe{border-color:#26d967;background-color:rgba(19,109,52,.7)}#subscribe input[type=submit]{background-color:#26d967}#subscribe a{color:#fff}}@media print{nav{background:none;border-bottom:3px solid #17823e}#nav_inner{color:#17823e}}</style>
+<style>h1,h2,.title a:visited,.post__permalink a,.post__permalink a:visited{color:#17823e}a{color:#17823e}a:hover{background:rgba(23,130,62,.2)}a:visited:not(.novisited){color:#0c411f}a:visited:not(.novisited):hover{background:rgba(12,65,31,.2)}a.download{border-color:#17823e;color:#17823e !important;background:rgba(255,255,255,.4) !important}a.download:hover{background:rgba(23,130,62,.2) !important}pre,blockquote{border-color:rgba(23,130,62,.1);background-color:rgba(233,251,240,.4)}#subscribe{border-color:#17823e;background-color:rgba(168,240,194,.4)}#subscribe input[type=submit]{background-color:#17823e}footer{background:#17823e}@media(prefers-color-scheme: dark){a{color:#26d967}a:hover{background:rgba(38,217,103,.2)}a:visited:not(.novisited){color:#67e495}a:visited:not(.novisited):hover{background:rgba(103,228,149,.1)}h1,h2,.title a:visited,.post__permalink a,.post__permalink a:visited{color:#26d967}a.download{border-color:#26d967;color:#26d967 !important;background:rgba(0,0,0,.6) !important}a.download:hover{background:rgba(38,217,103,.4) !important}pre,blockquote{border-color:rgba(38,217,103,.3);background-color:rgba(4,22,10,.7)}#subscribe{border-color:#26d967;background-color:rgba(19,109,52,.7)}#subscribe input[type=submit]{background-color:#26d967}#subscribe a{color:#fff}}@media print{nav{background:none;border-bottom:3px solid #17823e}#nav_inner{color:#17823e}}</style>
 
 {% if page.colors.css_light %}
   <link rel="shortcut icon" type="image/png" href="/favicons/{{ page.colors.css_light | replace: "#", "" }}.png">
