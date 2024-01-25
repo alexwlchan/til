@@ -1,12 +1,16 @@
 ---
+layout: post
+title: Use the `{% capture %}` tag to assign complex strings to variables
 date: 2024-01-12 21:35:45 +0000
+tags:
+  - liquid
 ---
 You can use the [capture tag] to create a new variable:
 
 ```liquid
-{% capture variable %}
+{% raw %}{% capture variable %}
   value
-{% endcapture %}
+{% endcapture %}{% endraw %}
 ```
 
 This could be quite useful for building up complex variables with several conditionals or loops, inside the template.
