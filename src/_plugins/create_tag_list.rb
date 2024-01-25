@@ -7,5 +7,9 @@ Jekyll::Hooks.register :site, :post_read do |site|
     }
   end
 
+  tally.each do |k, v|
+    tally[k] = v.sort_by { |p| p.date }.reverse
+  end
+
   site.data["tag_tally"] = tally
 end

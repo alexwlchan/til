@@ -25,7 +25,7 @@ title: ""
 
 <ul>
 {% for p in tagged_posts %}
-  <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+  <li><a href="{{ p.url }}">{{ p.title }}</a> ({{ p.date | date: "%-d %B %Y" }})</li>
 {% endfor %}
 </ul>
 
