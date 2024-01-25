@@ -1,5 +1,10 @@
 ---
+layout: post
+title: Using sqlite-utils to convert a CSV into a SQLite database
 date: 2024-01-02 10:54:18 +0000
+tags:
+  - sqlite
+  - python
 ---
 
 In the past I've written Python scripts that use the `csv` and `sqlite3` modules to convert CSV data into SQLite, but while reading [a Datasette tutorial][tutorial], I discovered that there's a CLI tool called `sqlite-utils` that makes this much easier.

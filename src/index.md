@@ -34,7 +34,7 @@ You can <a href="/atom.xml">subscribe to the RSS feed</a> to get new TILs.
 
 <ul>
 {% for p in tagged_posts %}
-  <li><a href="{{ p.url }}">{{ p.title }}</a> ({{ p.date | date: "%-d %B %Y" }})</li>
+  <li><a href="{{ p.url }}">{{ p.title | markdownify_oneline | smartify }}</a> ({{ p.date | date: "%-d %B %Y" }})</li>
 {% endfor %}
 </ul>
 
