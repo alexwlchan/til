@@ -1,4 +1,4 @@
-DOCKER_IMAGE = ghcr.io/alexwlchan/jekyll-run:1
+DOCKER_IMAGE = ghcr.io/alexwlchan/alexwlchan.net:42
 
 ROOT = $(shell git rev-parse --show-toplevel)
 
