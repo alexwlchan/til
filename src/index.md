@@ -14,7 +14,7 @@ You can <a href="/atom.xml">subscribe to the RSS feed</a> to get new TILs.
 {% assign sorted_tags = site.data["tag_tally"] | sort %}
 
 <p style="display: inline;">
-  <strong>Browse by tag:</strong>
+  <strong id="browse-by-tag">Browse by tag:</strong>
 </p>
 <ul class="dot_list" style="display: inline;">
   {% for t in sorted_tags %}

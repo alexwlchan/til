@@ -1,10 +1,14 @@
 ---
+layout: post
+title: Live Text is aware of how hyphenation works (kinda)
 date: 2023-12-26 12:26:12 +0000
+tags:
+  - live-text
 ---
 
 Here’s a screenshot from a Kindle book (from *Silo Submerged*, by WJ Davies):
 
-![](the-runner-text-screenshot.png)
+<img src="/images/2023/the-runner-text-screenshot.png">
 
 If I run that through Live Text in Preview or Photos on Ventura, notice how it's smart enough to compress the hyphenated "al-ways" into a single line:
 
@@ -12,7 +16,7 @@ If I run that through Live Text in Preview or Photos on Ventura, notice how it's
 
 But it doesn’t always work – here’s another except from the same trilogy:
 
-![](the-watcher-text-screenshot.png)
+<img src="/images/2023/the-watcher-text-screenshot.png">
 
 which is transcribed as:
 

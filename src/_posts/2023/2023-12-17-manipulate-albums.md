@@ -1,5 +1,9 @@
 ---
+layout: post
+title: How to delete albums
 date: 2023-12-27 23:15:50 +0000
+tags:
+  - photokit
 ---
 You can delete albums with the [deleteAssetCollections] API, for example:
 

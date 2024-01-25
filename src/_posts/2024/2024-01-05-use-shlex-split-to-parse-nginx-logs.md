@@ -1,5 +1,10 @@
 ---
+layout: post
+title: Use shlex.split() to parse log files quickly
 date: 2024-01-05 12:09:22 +0000
+tags:
+  - python
+  - nginx
 ---
 I wanted to parse some nginx log files, and I know I've done something like this in the past (possibly with Apache logs) – but I remember that involved quite a complicated regex for extracting all the components.
 
