@@ -1,6 +1,11 @@
 ---
+layout: post
 date: 2024-01-04 22:59:15 +0000
-date_updated: 2024-01-20 11:48:34 +0000
+last_modified_at: 2024-01-20 11:48:34 +0000
+title: "Get and manipulate the contents of a page in Safari with \"do JavaScript\""
+tags:
+  - safari
+  - applescript
 ---
 Here's an AppleScript which runs `document.querySelector` in a Safari tab and returns the matching HTML:
 
