@@ -13,9 +13,14 @@ TIL = Today I Learned.
 
 You can think of this site as a sort of <a href="https://winterflower.github.io/2017/08/17/software-engineering-notebook/">“digital lab notebook”</a> – a collection of things I’ve learnt while doing software development and browsing the Internet that I thought were worth remembering.
 
+There are {{ site.posts | size }} TILs so far.
+You can <a href="/atom.xml">subscribe to the RSS feed</a> to get new TILs.
+
 {% assign sorted_tags = site.data["tag_tally"] | sort %}
 
-<p style="display: inline;">Browse by tag:</p>
+<p style="display: inline;">
+  Browse by tag:
+</p>
 <ul class="dot_list" style="display: inline;">
   {% for t in sorted_tags %}
   <li>
