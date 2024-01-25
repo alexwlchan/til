@@ -9,15 +9,17 @@
   [headers.values]
     # https://scotthelme.co.uk/hardening-your-http-response-headers/#content-security-policy
     #
-    #   - youtube-nocookie.com is used for YouTube embeds
     #   - analytics.alexwlchan.net is used for my tracking pixel
+    #   - d33wubrfki0l68.cloudfront.net is a temporary workaround for
+    #     what appears to be a Netlify issue
+    #     See https://answers.netlify.com/t/images-are-being-served-from-cloudfront-on-a-brand-new-site/111095
     #
     content-security-policy = """\
       default-src 'self'; \
       style-src 'self' 'unsafe-inline' https://alexwlchan.net; \
       script-src 'self' 'unsafe-inline'; \
       connect-src https://analytics.alexwlchan.net; \
-      img-src 'self' 'unsafe-inline' https://alexwlchan.net;
+      img-src 'self' 'unsafe-inline' https://alexwlchan.net https://d33wubrfki0l68.cloudfront.net/;
     """
 
     # https://scotthelme.co.uk/a-new-security-header-feature-policy/
