@@ -19,7 +19,7 @@ You can <a href="/atom.xml">subscribe to the RSS feed</a> to get new TILs.
 <ul class="dot_list" style="display: inline;">
   {% for t in sorted_tags %}
   <li>
-    <a href="#{{ t[0] }}" class="novisited">{{ t[0] }}</a>&nbsp;({{ t[1] | size }})
+    <a href="#{{ t[0] }}" class="novisited">{{ t[0] }}</a>
   </li>
   {% endfor %}
 </ul>
@@ -30,7 +30,7 @@ You can <a href="/atom.xml">subscribe to the RSS feed</a> to get new TILs.
 {% assign tag_name = t[0] %}
 {% assign tagged_posts = t[1] %}
 
-<h3 id="{{ tag_name }}">{{ tag_name }} <a href="#{{ tag_name }}" style="text-decoration: none;" class="novisited">#</a></h3>
+<h3 id="{{ tag_name }}">{{ tag_name }} <!-- <a href="#{{ tag_name }}" style="text-decoration: none;" class="novisited">#</a> --></h3>
 
 <ul>
 {% for p in tagged_posts %}
