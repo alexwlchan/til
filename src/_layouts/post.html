@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+{% assign post = page %}
+
+<article>
+  <h1 class="title {% if post.link %}linkpost_title{% endif %}">
+    <a class="novisited" href="{{ post.link }}">
+    
+      {% comment %}
+        This unofficial 'role="text"' attribute means that the title will
+        be read as a continuous block of text, even if it contains formatting.
+      
+        See https://tinytip.co/tips/a11y-voiceover-text-role/
+      {% endcomment %}
+      <span role="text">
+        {{ post.title | markdownify_oneline | cleanup_text | smartify }}
+      </span>
+
+    </a>
+  </h1>
+
+  <div class="meta">
+    <ul class="dot_list">
+      <li class="post__date">
+        Posted
+        <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+          {{- post.date | date: site.date_format -}}
+        </time>
+      </li>
+      {% if post.date_updated %}
+      <li class="post__updated_date">Updated {{ post.date_updated | date: site.date_format }}</li>
+      {% endif %}
+
+      <li class="post__tags">
+        Tagged with
+        {% assign tags = post.tags | sort %}
+        {% for t in tags %}
+          <a href="/#{{ t }}">{{ t }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </li>
+    </ul>
+  </div>
+
+  {{ post.content | cleanup_text | smartify | pretty_hr }}
+</article>

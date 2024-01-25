@@ -1,0 +1,27 @@
+title: "alexwlchan’s TILs"
+author: "Alex Chan"
+description: "Alex Chan's personal blog"
+
+url: "https://til.alexwlchan.net"
+
+source: "src"
+destination: "_site"
+
+date_format: "%-d %B %Y"
+
+permalink: "/:title/"
+
+markdown: "kramdown"
+
+kramdown:
+  auto_ids: true
+  smart_quotes: "lsquo,rsquo,ldquo,rdquo"
+
+highlighter: "rouge"
+
+plugins:
+  - "jekyll-include-cache"
+
+liquid:
+  error_mode: "strict"
+  strict_filters: true

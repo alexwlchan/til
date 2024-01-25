@@ -1,5 +1,9 @@
 ---
+layout: post
 date: 2023-05-23 21:05:27 +0000
+title: How to profile Swift code
+tags:
+  - swift
 ---
 [Stack Overflow coughed up a snippet which I've adapted](https://stackoverflow.com/a/24755958/1558022):
 

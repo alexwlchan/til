@@ -1,5 +1,9 @@
 ---
+layout: post
 date: 2023-12-08 20:58:33 +0000
+title: Go between M-IDs and filenames on Wikimedia Commons
+tags:
+  - wikimedia-commons
 ---
 Every file on Wikimedia Commons has two identifiers:
 
