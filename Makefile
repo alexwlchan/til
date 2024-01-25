@@ -36,6 +36,7 @@ serve:
 			--trace
 
 deploy:
+	mkdir -p .netlify/functions-internal
 	docker run --tty --rm \
 		--volume $(ROOT):$(ROOT) \
 		--workdir $(ROOT) \
@@ -43,6 +44,7 @@ deploy:
 		deploy --auth "$(NETLIFY_AUTH_TOKEN)"
 
 deploy-prod:
+	mkdir -p .netlify/functions-internal
 	docker run --tty --rm \
 		--volume $(ROOT):$(ROOT) \
 		--workdir $(ROOT) \
