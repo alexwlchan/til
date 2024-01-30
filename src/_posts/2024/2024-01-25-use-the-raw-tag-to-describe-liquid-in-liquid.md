@@ -19,7 +19,7 @@ I'd written an example in my Markdown source code:
 
 but the rendered `<pre>` block was empty -- Liquid ran before the Markdown processor, so it had captured the variable and left empty space.
 
-I found [an answer by Marcel Jackwerth](https://stackoverflow.com/a/7585479/1558022) on Stack Overflow that suggests using the `{% raw %}` tag, which in this case became:
+I found [an answer by Marcel Jackwerth](https://stackoverflow.com/a/7585479/1558022) on Stack Overflow that suggests using the `{&percnt; raw &percnt;}` tag, which in this case became:
 
 <pre><code>You can use the [capture tag] to create a new variable:
 
