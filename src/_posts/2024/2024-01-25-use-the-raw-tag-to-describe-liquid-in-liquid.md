@@ -24,7 +24,7 @@ I found [an answer by Marcel Jackwerth](https://stackoverflow.com/a/7585479/1558
 <pre><code>You can use the [capture tag] to create a new variable:
 
 ```liquid
-{&percnt; raw &percnt;}{% capture variable %}
+{&percnt; raw &percnt;}{% raw %}{% capture variable %}
   value
-{% endcapture %}{&percnt; endraw &percnt;}
+{% endcapture %}{% endraw %}{&percnt; endraw &percnt;}
 ```</code></pre>
