@@ -28,3 +28,5 @@ I found [an answer by Marcel Jackwerth](https://stackoverflow.com/a/7585479/1558
   value
 {% endcapture %}{% endraw %}{&percnt; endraw &percnt;}
 ```</code></pre>
+
+(Trying to write a TIL about the `{% raw %}{% raw %}{% endraw %}` is even more of a mess of `raw` tags and percent-encoding to get the right output from Liquid.)
