@@ -37,3 +37,18 @@ I'm not super experienced with SPARQL, but I'll use this as a place to gather qu
     ```
 
     [Link to query in WCQS](https://commons-query.wikimedia.org/#SELECT%20%3Fitem%20%3Fdescribed_url%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP7482%20wd%3AQ74228490%20.%20%20%20%20%20%20%20%23%20P7482%20%28source%20of%20file%29%20%3D%20Q74228490%20%28file%20available%20on%20the%20internet%29%0A%20%20%3Fitem%20p%3AP7482%20%3Fstatement%20.%0A%20%20%3Fstatement%20pq%3AP137%20wd%3AQ103204.%20%20%20%20%20%20%20%23%20P137%20%28operator%29%20%3D%20Q420747%20%28National%20Library%20of%20Finland%29%0A%20%20%3Fstatement%20pq%3AP973%20%3Fdescribed_url.%0A%20%20VALUES%20%28%3Fdescribed_url%29%20%7B%20%28%3Chttps%3A%2F%2Fwww.flickr.com%2Fphotos%2Fsunrise%2F29916169%2F%3E%29%20%28%3Chttps%3A%2F%2Fwww.flickr.com%2Fphotos%2Fsunrise%2F29916169%3E%29%20%7D%0A%7D%20LIMIT%201), which returns a single result.
+
+*   This is a query that finds users with a particular value in the Flickr User ID field:
+
+    ```sparql
+    SELECT ?image WHERE {
+      # P170 (creator) / P3267 (Flickr user ID) = specified ID
+      ?file p:P170 ?creator .
+      ?creator pq:P3267 "52498302@N08" .
+  
+      # Retrieve the image URL to display as a link
+      ?file schema:url ?image .
+    }
+    ```
+    
+    [Link to query in WCQS](https://commons-query.wikimedia.org/#SELECT%20%3Fimage%20WHERE%20%7B%0A%20%20%23%20P170%20%28creator%29%20%2F%20P3267%20%28Flickr%20user%20ID%29%20%3D%20specified%20ID%0A%20%20%3Ffile%20p%3AP170%20%3Fcreator%20.%0A%20%20%3Fcreator%20pq%3AP3267%20%2252498302%40N08%22%20.%0A%20%20%0A%20%20%23%20Retrieve%20the%20image%20URL%20to%20display%20as%20a%20link%0A%20%20%3Ffile%20schema%3Aurl%20%3Fimage%20.%0A%7D%0A)
