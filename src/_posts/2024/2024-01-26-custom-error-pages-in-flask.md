@@ -10,12 +10,12 @@ You can customise the error pages by adding a few instances of `app.error_handle
 ```python
 @app.errorhandler(404)
 def not_found(e: Exception) -> str:
-    return render_template("not_found.html")
+    return render_template("not_found.html"), 404
 
 
 @app.errorhandler(500)
 def internal_server_error(e: Exception) -> str:
-    return render_template("internal_server_error.html")
+    return render_template("internal_server_error.html"), 500
 ```
 
 Some notes:
