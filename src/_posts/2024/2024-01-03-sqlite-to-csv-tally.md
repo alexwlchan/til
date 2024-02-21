@@ -12,7 +12,7 @@ I always forget the exact syntax for this; this is the sort of query I want:
 
 ```sql
 SELECT
-  column_name, COUNT(column_name)
+  column_name, COUNT(*)
 FROM
   table
 GROUP BY
@@ -27,7 +27,7 @@ sqlite> .mode csv
 sqlite> .headers on
 sqlite> .once tally.csv
 sqlite> SELECT
-   ...>   column_name, COUNT(column_name)
+   ...>   column_name, COUNT(*)
    ...> FROM
    ...>   table
    ...> GROUP BY
