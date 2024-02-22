@@ -11,12 +11,11 @@ This site is as a sort of <a href="https://winterflower.github.io/2017/08/17/sof
 
 You can <a href="/atom.xml">subscribe to the RSS feed</a> to get new TILs.
 
+<h3>Browse by tag:</h3>
+
 {% assign sorted_tags = site.data["tag_tally"] | sort %}
 
-<p style="display: inline;">
-  <strong id="browse-by-tag">Browse by tag:</strong>
-</p>
-<ul class="dot_list" style="display: inline;">
+<ul class="dot_list">
   {% for t in sorted_tags %}
   <li>
     <a href="#{{ t[0] }}" class="novisited">{{ t[0] }}</a>
@@ -25,6 +24,18 @@ You can <a href="/atom.xml">subscribe to the RSS feed</a> to get new TILs.
 </ul>
 
 <img src="/notebook.png">
+
+{% assign recent_posts = site.posts | slice: 0, 10 %}
+
+<h3>Recent TILs:</h3>
+
+<ul>
+{% for p in recent_posts %}
+  <li><a href="{{ p.url }}">{{ p.title | markdownify_oneline | smartify }}</a> ({{ p.date | date: "%-d %B %Y" }})</li>
+{% endfor %}
+</ul>
+
+<hr/>
 
 {% for t in sorted_tags %}
 {% assign tag_name = t[0] %}
