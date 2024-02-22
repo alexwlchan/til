@@ -18,6 +18,7 @@ class AddNonBreakingSpaces
     # a number, e.g. 'Apollo 11' or 'RFC 456'
     prefix_words = %w[
       Apollo
+      Bash
       HTTP
       ImageMagick
       issue
