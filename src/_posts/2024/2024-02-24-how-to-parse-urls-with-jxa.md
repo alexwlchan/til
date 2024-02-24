@@ -24,7 +24,7 @@ Error: ReferenceError: Can't find variable: URL
 Instead, a way I've found to parse URLs in JXA is to use `NSURL`.
 It's a slightly different interface to JavaScript's standard URL class, but better than writing a URL parser from scratch:
 
-```
+```javascript
 var url = $.NSURL.URLWithString(urlString);
 
 var scheme = ObjC.unwrap(url.scheme);
