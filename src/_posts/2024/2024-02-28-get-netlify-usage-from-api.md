@@ -16,7 +16,7 @@ I used the Netlify API to get the data and show it in another dashboard.
 
 2.  I got my Netlify team identifier from the URL of my settings page (`https://app.netlify.com/teams/<team_id>/settings/general`).
 
-3.  I called the Netlfiy API to get the data:
+3.  I called the Netlify API to get the data:
 
     ```console
     $ curl -H 'Authorization: Bearer <TOKEN>' 'https://api.netlify.com/api/v1/accounts/<team_slug>/bandwidth' | jq .
