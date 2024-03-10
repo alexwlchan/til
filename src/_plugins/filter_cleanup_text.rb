@@ -43,6 +43,8 @@ class AddNonBreakingSpaces
       byte
       count
       tags
+      GB
+      GiB
     ].join('|')
 
     text = text.gsub(/(\d+) (#{countable_words})/, '\1&nbsp;\2')
