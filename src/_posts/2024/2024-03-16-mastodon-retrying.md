@@ -28,12 +28,12 @@ And there were a couple of replies to his post, explaining what would happen, in
 >
 > Here is the retry algorithm, if you were down a day.  They will trickle in vs a massive flood
 >
-> ```
+> ```ruby
 > (0..16).each do |count|
 >   delay = (count**4) + 15
->  jitter = rand(0.5 * (count**4))
->  total_delay = delay + jitter
->  puts "Retry #{count}: #{total_delay} seconds"
+>   jitter = rand(0.5 * (count**4))
+>   total_delay = delay + jitter
+>   puts "Retry #{count}: #{total_delay} seconds"
 > end
 > ```
 >
