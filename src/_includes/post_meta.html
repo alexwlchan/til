@@ -1,0 +1,21 @@
+<div class="meta">
+  <ul class="dot_list">
+	<li class="post__date">
+	  Posted
+	  <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+		{{- post.date | date: site.date_format -}}
+	  </time>
+	</li>
+	{% if post.date_updated %}
+	<li class="post__updated_date">Updated {{ post.date_updated | date: site.date_format }}</li>
+	{% endif %}
+
+	<li class="post__tags">
+	  Tagged with
+	  {% assign tags = post.tags | sort %}
+	  {% for t in tags %}
+		<a href="/#{{ t }}">{{ t }}</a>{% unless forloop.last %}, {% endunless %}
+	  {% endfor %}
+	</li>
+  </ul>
+</div>

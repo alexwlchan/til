@@ -27,11 +27,21 @@ You can <a href="/atom.xml">subscribe to the RSS feed</a> to get new TILs.
 
 {% assign recent_posts = site.posts | slice: 0, 10 %}
 
-<h3>Recent TILs:</h3>
+### Recent TILs
 
-<ul>
-{% for p in recent_posts %}
-  <li><a href="{{ p.url }}">{{ p.title | markdownify_oneline | smartify }}</a> ({{ p.date | date: "%-d %B %Y" }})</li>
+<ul id="recent_posts">
+{% for post in recent_posts %}
+  <li>
+    <h4>
+      <a href="{{ post.url }}">{{ post.title | markdownify_oneline | smartify }}</a>
+    </h4>
+
+    {% include post_meta.html %}
+
+    {% if post.summary %}
+      {{ post.summary | markdownify }}
+    {% endif %}
+  </li>
 {% endfor %}
 </ul>
 
